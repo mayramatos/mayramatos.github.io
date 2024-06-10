@@ -1,0 +1,111 @@
+#experiencia{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0px 100px;
+}
+#experiencia .subtitulo {
+    color: #E0E0E0;
+}
+.experiencia-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    margin-bottom: 60px;
+    max-width: 40ch;
+    color: #525252;
+}
+.experiencia-texto strong {
+    color: #141414;
+}
+.empresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+    background-color: #F5F5F5;
+    margin-bottom: 20px;
+    border: 1px solid #F0F0F0;
+    grid-column: 3 / 4;
+    border-radius: 7px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.ano {
+    position: absolute;
+    top: 22px;
+    left: -70px;
+    text-align: right;
+    width: 30px;
+    color: #525252;
+    font-size: 0.875rem;
+}
+.empresa-titulo {
+    font-family: 'Playfair Display';
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+.resumo-experiencia {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #525252;
+    margin-top: 10px;
+}
+.linguagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+    margin-top: 10px;
+}
+.itens-linguagens {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    padding: 5px 10px;
+}
+.itens-experiencia p {
+    font-size: 0.875rem;
+    height: 20px;
+}
+.empresa::before {
+    content:" ";
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#893aeb, #701CDA);
+    position: absolute;
+    left: -4px;
+    top: 20px;
+}
+@media (width <=800px) {
+    #experiencia {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    #experiencia .subtitulo {
+        color: #141414;
+        justify-self: center;
+    }
+    .experiencia-texto {
+        max-width: 60ch;
+        font-size: 1.25rem;
+    }
+    .ano {
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+    }
+    .ano::before {
+        content: 'Ano: ';
+    }
+}
+@media (width <=500px) {
+    .empresa {
+        grid-template-columns: 1fr;
+    }
+}
+

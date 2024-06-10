@@ -1,0 +1,49 @@
+.rodape {
+    background-color: #000000;
+    margin: 0 auto;
+}
+
+.rodape-geral {
+    max-width: 1200px;
+    padding: 120px 20px 60px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 200px;
+    align-items: center;
+}
+
+.footer-texto {
+    color: #CCCCCC;
+    font-size: 1.5rem;
+    line-height: 1.33;
+}
+
+.contato li{
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.contato a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.direitos {
+    color: #8F8F8F;
+    font-size: 1.125rem;
+    grid-column: 1 / -1;
+}
+
+@media (width <=800px) {
+    .rodape-geral {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contato li {
+        font-size: 1.5rem;
+    }
+}
