@@ -45,12 +45,12 @@
         cursor 0.75s step-end infinite;
 }
 
-.botoes {
+.btn-sobre {
     display: flex;
     gap: 50px;
 }
 
-.botoes a {
+.btn-sobre a {
     cursor: pointer;
     border: 1px solid var(--cor-2);
     padding: 10px 16px;
@@ -59,17 +59,17 @@
     font-size: 14px;
 }
 
-.botoes a:hover {
+.btn-sobre a:hover {
     background-color: var(--cor-2);
     color: var(--cor-6);
 }
 
-.botao-projeto {
+.btn-projeto {
     background-color: var(--cor-2);
     color: var(--cor-6);
 }
 
-.botao-projeto:hover {
+.btn-projeto:hover {
     background-color: var(--cor-6);
     color: var(--cor-0);
 }
