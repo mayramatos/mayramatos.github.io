@@ -1,0 +1,113 @@
+footer {
+  background: var(--cor-9);
+  border-top: 1px solid var(--cor-15);
+  padding: 40px 32px 24px;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--cor-3), var(--cor-2), var(--cor-7), var(--cor-8));
+}
+
+.rodape-conteudo { 
+  max-width: 960px; 
+  margin: 0 auto; 
+}
+
+.rodape-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px; 
+  margin-bottom: 32px; 
+}
+
+.rodape-marca .nome { 
+  font-size: 1.25rem; 
+  font-weight: 600; 
+  color: var(--cor-10); 
+  letter-spacing: 0.04em; 
+}
+
+.rodape-marca .funcao { 
+  font-size: 0.75rem; 
+  color: var(--cor-11); 
+  margin-top: 4px; 
+  letter-spacing: 0.1em; 
+  text-transform: uppercase; 
+}
+
+.rodape-links { 
+  display: flex; 
+  gap: 24px; 
+  align-self: center;
+}
+
+.rodape-links a { 
+  color: var(--cor-11); 
+  font-family: "JetBrains Mono", monospace; 
+  font-size: 0.8125rem;
+  letter-spacing: 0.05em; 
+  transition: color 0.2s; 
+}
+
+.rodape-links a:hover { 
+  color: var(--cor-2); 
+}
+
+.rodape-sociais { 
+  display: flex; 
+  gap: 10px; 
+  align-items: center; 
+}
+
+.icone-social {
+  width: 34px; 
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--cor-15);
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  color: var(--cor-11); 
+  font-size: 0.9375rem; 
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.icone-social:hover { 
+  border-color: var(--cor-2); 
+  color: var(--cor-2); 
+}
+
+.rodape-divisor { 
+  height: 1px; 
+  background: var(--cor-15); 
+  margin-bottom: 20px; 
+  opacity: 0.5; 
+}
+
+.rodape-base { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  gap: 8px; 
+}
+
+.direitos-autorais { 
+  font-size: 0.75rem; 
+  color: var(--cor-14); 
+  font-family: 'Space Mono', monospace; 
+}
+
+.direitos-autorais span { 
+  color: var(--cor-7); 
+}

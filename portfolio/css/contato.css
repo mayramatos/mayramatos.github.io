@@ -1,0 +1,113 @@
+#contato { 
+    padding: 32px; }
+
+.contato-bg {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.contato-bg h2 {
+  margin: 50px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  padding-bottom: 12px;
+}
+
+.contato-bg p {
+  color: var(--cor-20);
+  font-size: 0.9375rem;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+}
+
+.form {
+  border: 0.5px solid var(--cor-18);
+  border-radius: 14px;
+  overflow: hidden;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.grade-contato {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  border-bottom: 0.5px solid var(--cor-18);
+}
+
+.grade-contato:last-of-type {
+  border-bottom: none;
+}
+
+.formulario-bg {
+  background: var(--cor-16);
+}
+
+form label {
+  padding: 14px 16px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--cor-8);
+  background: var(--cor-17);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-right: 0.5px solid var(--cor-18);
+  font-family: "JetBrains Mono", monospace;
+}
+
+form input,
+form textarea {
+  background-color: var(--cor-16);
+  font-family: "JetBrains Mono", monospace;
+  color: var(--cor-10);
+  border: none;
+  outline: none;
+  font-size: 0.875rem;
+  padding: 14px 16px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background 0.15s;
+}
+
+form input:focus,
+form textarea:focus {
+  background-color: var(--cor-17);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: var(--cor-14);
+}
+
+form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.form-rodape {
+  padding: 16px;
+  border-top: 0.5px solid var(--cor-18);
+  background: var(--cor-17);
+  display: flex;
+  justify-content: center;
+}
+
+.btn-enviar {
+  background: var(--cor-3);
+  border: none;
+  color: var(--cor-10);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.btn-enviar:hover { background: var(--cor-18); }
+.btn-enviar:active { transform: scale(0.98); }

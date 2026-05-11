@@ -1,0 +1,88 @@
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+    padding: 20px 50px;
+}
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    display: inline-block;
+    position: relative;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1rem;
+    color: var(--cor-0);
+}
+
+.menu a:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background-color: var(--cor-2) ;
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.menu a:hover:after {
+    width: 100%;
+}
+
+.menu a:hover
+.menu a:active {
+    color: var(--cor-2);
+}
+.logo-menu a{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: linear-gradient(
+    90deg,#3BF1FF,#1A8CFF,#9B5CFC,#5C2D91
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 800px) {
+    .menu-container {
+        padding: 20px 30px; 
+    }
+
+    .menu {
+        gap: 20px; 
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-container {
+        flex-direction: column; 
+        gap: 15px;
+        padding: 15px 10px;
+        background: rgba(0, 0, 0, 0.8); 
+        backdrop-filter: blur(10px); 
+    }
+
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu a {
+        font-size: 0.875rem; 
+    }
+
+    .logo-menu a {
+        font-size: 1.25rem;
+    }
+}

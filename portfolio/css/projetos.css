@@ -1,0 +1,205 @@
+.projetos-container {
+    margin-bottom: 3rem;
+}
+
+.projetos-container {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.projetos-container h2 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    padding-bottom: 16px;
+}
+
+.projetos-container p {
+    color: var(--cor-10);
+    font-size: 1rem;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+ 
+.projetos-cards {
+    background: var(--cor-13);
+    border: 1px solid var(--cor-15);
+    border-radius: 16px;
+    padding: 28px 24px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.25s, transform 0.25s;
+    backdrop-filter: blur(8px);
+}
+ 
+.projetos-cards::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--cor-7), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+ 
+.projetos-cards:hover {
+    border-color: var(--cor-14);
+    transform: translateY(-3px);
+}
+ 
+.projetos-cards:hover::before {
+    opacity: 1;
+}
+ 
+.card-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6875rem;
+    color: var(--cor-14);
+    margin-bottom: 16px;
+    letter-spacing: 0.1em;
+}
+ 
+.projetos-cards h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--cor-10);
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+ 
+.projetos-cards p {
+    font-size: 0.85rem;
+    color: var(--cor-11);
+    line-height: 1.65;
+    flex: 1;
+    margin-bottom: 20px;
+}
+ 
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+ 
+.tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.625rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid;
+    letter-spacing: 0.05em;
+}
+ 
+.tag-html  { color: var(--cor-8);  border-color: var(--cor-8);  background: rgba(96,165,250,0.08); }
+.tag-css   { color: var(--cor-7);  border-color: var(--cor-7);  background: rgba(167,139,250,0.08); }
+.tag-js    { color: var(--cor-12); border-color: var(--cor-12); background: rgba(52,211,153,0.08); }
+ 
+  /* — Botões — */
+.card-links {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+ 
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6875rem;
+    padding: 7px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+    letter-spacing: 0.04em;
+}
+ 
+.btn-github {
+    color: var(--cor-10);
+    border: 1px solid var(--cor-15);
+    background: transparent;
+ }
+ 
+.btn-github:hover {
+    border-color: var(--cor-7);
+    color: var(--cor-7);
+}
+ 
+.btn-site {
+    color: var(--cor-9);
+    background: var(--cor-2);
+    border: 1px solid transparent;
+    font-weight: 700;
+}
+ 
+.btn-site:hover {
+    background: var(--cor-8);
+}
+ 
+  /* Ícones SVG inline */
+.ico { width: 13px; height: 13px; flex-shrink: 0; }
+ 
+  /* — Card "em breve" — */
+.em-breve {
+    border-style: dashed;
+    border-color: var(--cor-15);
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 200px;
+    cursor: default;
+}
+ 
+.em-breve:hover {
+    transform: none;
+    border-color: var(--cor-15);
+}
+ 
+.em-breve::before { display: none; }
+ 
+.em-breve h3 {
+    color: var(--cor-14);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
+}
+ 
+.em-breve .breve-detalhe {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--cor-13);
+    border: 1px dashed var(--cor-15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+}
+ 
+.em-breve .breve-detalhe svg {
+    width: 16px;
+    height: 16px;
+    stroke: var(--cor-14);
+}
+ 
+  /* — Responsivo — */
+@media (max-width: 860px) {
+    .projetos-grid { grid-template-columns: repeat(2, 1fr); }
+}
+ 
+@media (max-width: 560px) {
+    .projetos-grid { grid-template-columns: 1fr; }
+    body { padding: 2.5rem 1.25rem; }
+}
