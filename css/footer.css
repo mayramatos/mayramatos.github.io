@@ -111,3 +111,12 @@ footer::before {
 .direitos-autorais span { 
   color: var(--cor-7); 
 }
+
+@media (max-width: 600px) {
+  .rodape-links {
+    display: grid;
+    flex-direction: column;
+  }
+
+  
+}

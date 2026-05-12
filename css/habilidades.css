@@ -127,6 +127,9 @@
 }
 
 @media (max-width: 800px) {
+    .habilidades-bg {
+      margin-bottom: 100px;
+    }
     .habilidades-bg h2 {
         font-size: 2.5rem;
     }
