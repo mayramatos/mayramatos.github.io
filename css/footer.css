@@ -116,7 +116,8 @@ footer::before {
   .rodape-links {
     display: grid;
     flex-direction: column;
+    gap: 10px;
   }
 
-  
+
 }
