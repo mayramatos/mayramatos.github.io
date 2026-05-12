@@ -5,6 +5,7 @@
   margin-top: 150px;
   text-align: center;
   padding-bottom: 50px;
+  margin-bottom: 400px;
 }
 
 .habilidades-bg h2 {
@@ -12,6 +13,7 @@
   font-weight: 700;
   letter-spacing: -1px;
   padding-bottom: 16px;
+  margin-top: 50px;
 }
 
 .habilidades-bg p {
@@ -111,7 +113,73 @@
   margin-top: 2px;
 }
 
-.barra { height: 100%; border-radius: 99px; }
-.barra-1 { width: 33%; background: var(--cor-8); }
-.barra-2 { width: 66%; background: var(--cor-19); }
-.barra-3 { width: 100%; background: var(--cor-2); }
+.barra { 
+  height: 100%; border-radius: 99px; 
+}
+.barra-1 { 
+  width: 33%; background: var(--cor-8); 
+}
+.barra-2 { 
+  width: 66%; background: var(--cor-19); 
+}
+.barra-3 { 
+  width: 100%; background: var(--cor-2); 
+}
+
+@media (max-width: 800px) {
+    .habilidades-bg h2 {
+        font-size: 2.5rem;
+    }
+
+    .nivel {
+        padding: 0.5rem;
+    }
+
+    .coluna {
+        padding: 1rem; 
+    }
+}
+
+@media (max-width: 600px) {
+    .habilidades-bg {
+        margin-top: 80px;
+    }
+
+    .cabecalho-niveis {
+        display: none; 
+    }
+
+    .grade-habilidades {
+        grid-template-columns: 1fr;
+        border-right: 0.5px solid var(--cor-18);
+        margin: 0 10px;
+    }
+
+    .coluna {
+        border-right: none;
+        border-bottom: 0.5px solid var(--cor-18);
+        padding: 1.5rem;
+    }
+
+    .coluna:last-child {
+        border-bottom: none;
+    }
+
+    .coluna::before {
+        font-size: 0.625rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 15px;
+        display: block;
+        text-align: left;
+    }
+
+    .basico::before { content: "Nível: Básico"; color: var(--cor-8); }
+    .intermediario::before { content: "Nível: Intermediário"; color: var(--cor-19); }
+    .avancado::before { content: "Nível: Avançado"; color: var(--cor-2); }
+    
+    .habilidade {
+        text-align: left;
+    }
+}

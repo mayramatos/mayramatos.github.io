@@ -89,6 +89,12 @@ form textarea {
   min-height: 120px;
 }
 
+.form-feedback {
+  margin-top: 10px; 
+  font-weight: bold;
+  padding-top: 30px;
+}
+
 .form-rodape {
   padding: 16px;
   border-top: 0.5px solid var(--cor-18);
@@ -107,6 +113,7 @@ form textarea {
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.15s, transform 0.1s;
+  align-self: center;
 }
 
 .btn-enviar:hover { background: var(--cor-18); }
